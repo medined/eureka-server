@@ -26,6 +26,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Run wrapper
+        run: ./gradlew wrapper
+
       - name: Build jar
         run: ./gradlew build
 
