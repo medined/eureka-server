@@ -1,6 +1,6 @@
 # Run-time image that makes the final image
 FROM gcr.io/distroless/java:11
-COPY app.jar /app/app.jar
+COPY build/libs/eureka-server-2.3.0-RELEASE.jar /app/app.jar
 
 EXPOSE 8761
 
